@@ -1,0 +1,31 @@
+{
+  "name": "MultistepCheckoutExperience",
+  "version": "1.0.0",
+  "description": "Build a single-page app that takes a user through a series of forms that simulate a shopping cart checkout experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx babel client --watch --out-dir public",
+    "inspect": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech1989plus1/MultistepCheckoutExperience.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tech1989plus1/MultistepCheckoutExperience/issues"
+  },
+  "homepage": "https://github.com/Tech1989plus1/MultistepCheckoutExperience#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.7.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "express": "^4.17.1"
+  }
+}
