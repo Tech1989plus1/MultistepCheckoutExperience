@@ -1,11 +1,16 @@
 {
   "name": "MultistepCheckoutExperience",
   "version": "1.0.0",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "description": "Build a single-page app that takes a user through a series of forms that simulate a shopping cart checkout experience.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx babel client --watch --out-dir public",
+    "start": "npx babel client --watch --out-dir public --source-maps inline",
     "inspect": "nodemon ./server.js"
   },
   "repository": {
@@ -26,6 +31,9 @@
   "dependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-stepzilla": "^6.0.2"
   }
 }
